@@ -19,7 +19,7 @@
 
 <template>
     <section>
-        <strong class="text-white">
+        <strong class="text-white mx-6">
             {{ tempoDecorrido }}
         </strong>
     </section>

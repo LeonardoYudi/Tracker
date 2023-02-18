@@ -30,15 +30,15 @@ export default defineComponent({
 
 
 <template>
-    <div class="flex p-4 justify-between ">
-        <fieldset> 
+    <div class="flex justify-between ">
+   
             <input 
                 type="text" 
                 placeholder="Qual tarefa você deseja iniciar?" 
                 v-model="descricao"
-                class="w-max p-2 rounded-md"
+                class="w-4/5 p-4 rounded-md outline-none"
             />
-        </fieldset>
+       
         <div>
             <Temporizador @aoTemporizadorFinalizado="finalizarTarefa"/>
         </div>

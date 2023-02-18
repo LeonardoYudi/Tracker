@@ -36,18 +36,20 @@ import Cronometro from './Cronometro.vue';
 <template>
     <div class="flex items-center">
       <Cronometro :tempoEmSegundos="tempoEmSegundos"/>
-      <button class="py-2 px-4 rounded-md bg-indigo-600 ml-4 mr-3 flex" @click="iniciar" :disabled="cronometroRodando" >
-        <span class="icon">
-          <font-awesome-icon icon="fa-solid fa-play" />
-        </span>
-        <span class="ml-1">Play</span>
-      </button>
-      <button class="py-2 px-4 rounded-md bg-indigo-600" @click="finalizar" :disabled="!cronometroRodando">
-        <span class="icon">
-          <font-awesome-icon icon="fa-solid fa-stop" />
-        </span>
-        <span class="ml-1">Stop</span>
-      </button>
+      <div class="flex flex-col">
+        <button class="py-2 px-4 rounded-md bg-indigo-600 mb-2" @click="iniciar" :disabled="cronometroRodando" >
+          <span class="icon">
+            <font-awesome-icon icon="fa-solid fa-play" />
+          </span>
+          <span class="ml-1">Play</span>
+        </button>
+        <button class="py-2 px-4 rounded-md bg-indigo-600" @click="finalizar" :disabled="!cronometroRodando">
+          <span class="icon">
+            <font-awesome-icon icon="fa-solid fa-stop" />
+          </span>
+          <span class="ml-1">Stop</span>
+        </button>
+      </div>
     </div>
 </template>
   

@@ -5,7 +5,7 @@ import Box from './Box.vue';
 import Cronometro from './Cronometro.vue';
 
 export default defineComponent({
-    name: "Tarefas",
+    name: "Tarefa",
     components:{
         Cronometro,
         Box
@@ -21,7 +21,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <Box class="flex  p-4 m-4 rounded-md bg-slate-500 justify-between">
+    <Box class="flex  p-4 my-6 rounded-md bg-slate-500 justify-between">
         <div class="text-white">
             {{ tarefa.descricao || 'Tarefa sem descrição'}}
         </div>
