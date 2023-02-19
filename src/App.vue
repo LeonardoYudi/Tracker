@@ -1,15 +1,14 @@
 <script  lang="ts">
 import { defineComponent } from 'vue';
 import BarraLateral from './components/BarraLateral.vue';
-import Box from './components/Box.vue';
-import Formulario from './components/Formulario.vue';
-import Tarefa from './interfaces/Tarefa';
-import Tarefas from './components/Tarefa.vue'
+import Notificacoes from './components/Notificacoes.vue';
+
 
 export default defineComponent({
   name: 'App',
   components:{
     BarraLateral,
+    Notificacoes
   },
   data(){
     return{
@@ -32,6 +31,7 @@ export default defineComponent({
       <BarraLateral/>
     </div>
     <div class="p-4 w-screen">
+      <Notificacoes/>
       <RouterView></RouterView>
     </div>
   </main>
